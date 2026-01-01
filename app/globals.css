@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@theme {
+  --color-background: oklch(98.5% 0 0);
+  --color-foreground: oklch(29.7% 0.00003 271);
+
+  --color-surface: oklch(96% 0 0);
+  --color-surface-muted: oklch(92% 0 0);
+
+  --color-border: oklch(85% 0 0);
+}
+
+:root {
+  --color-background: oklch(98.5% 0 0);
+  --color-foreground: oklch(29.7% 0.00003 271);
+
+  --color-surface: oklch(96% 0 0);
+  --color-surface-muted: oklch(92% 0 0);
+
+  --color-border: oklch(85% 0 0);
+}
+:root {
+  --color-background: oklch(98.5% 0 0);
+  --color-foreground: oklch(29.7% 0.00003 271);
+
+  --color-surface: oklch(96% 0 0);
+  --color-surface-muted: oklch(92% 0 0);
+
+  --color-border: oklch(85% 0 0);
+}
+
+[data-theme="dark"] {
+  --color-background: oklch(20.5% 0 0);
+  --color-foreground: oklch(95% 0 0);
+
+  --color-primary: oklch(26.9% 0 0);
+  --color-primary-muted: oklch(37.1% 0 0);
+
+  --color-surface: oklch(24% 0 0);
+  --color-surface-muted: oklch(30% 0 0);
+
+  --color-border: oklch(40% 0 0);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-3xl w-full mx-auto px-6;
+  }
+}

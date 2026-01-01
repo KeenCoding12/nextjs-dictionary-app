@@ -1,0 +1,4 @@
+Dicap | Your Everyday Dictionary
+Look up words instantly with Dicap. Clean design, fast search, and clear meanings no fluff, just definitions.
+
+© {new Date().getFullYear()} Made with keen coding. All rights reserved.
